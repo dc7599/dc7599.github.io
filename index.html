@@ -2,38 +2,62 @@
 <html>
 <head>
 <title>A1 Classes</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body{
-font-family:Arial,sans-serif;
 margin:0;
-background:#f5f5f5;
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
 }
+
 header{
-background:#0d47a1;
-color:white;
-padding:30px;
+background:linear-gradient(135deg,#000,#222);
+padding:60px 20px;
 text-align:center;
+border-bottom:3px solid gold;
 }
-section{
-background:white;
-margin:15px;
-padding:20px;
-border-radius:10px;
+
+h1{
+font-size:50px;
+color:gold;
+margin:0;
 }
-.btn{
+
+.tagline{
+font-size:20px;
+margin-top:15px;
+color:#ddd;
+}
+
+.hero-btn{
 display:inline-block;
-background:#25D366;
-color:white;
-padding:12px 20px;
+margin-top:25px;
+padding:15px 30px;
+background:gold;
+color:black;
+font-weight:bold;
 text-decoration:none;
-border-radius:5px;
+border-radius:8px;
 }
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
+
+.section{
+padding:40px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:#1c1c1c;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+border:1px solid #333;
+}
+
+.card h2{
+color:gold;
 }
 </style>
 </head>
@@ -42,40 +66,38 @@ padding:15px;
 
 <header>
 <h1>A1 Classes</h1>
-<p>Empowering Education, Shaping Futures.</p>
+<p class="tagline">
+Empowering Education, Shaping Futures.
+</p>
+
+<a class="hero-btn"
+href="https://wa.me/917678664625">
+Admission Enquiry
+</a>
 </header>
 
-<section>
-<h2>Admissions Open 2026-27</h2>
-<p>Classes 9th, 10th, 11th & 12th</p>
-<a class="btn" href="https://wa.me/917678664625">WhatsApp Us</a>
-</section>
+<div class="section">
 
-<section>
+<div class="card">
+<h2>Admissions Open 2026-27</h2>
+<p>
+Classes 9th, 10th, 11th & 12th
+</p>
+</div>
+
+<div class="card">
 <h2>Courses Offered</h2>
+
 <ul>
 <li>Mathematics (9th-12th)</li>
 <li>Economics</li>
 <li>Business Studies</li>
 <li>Accountancy</li>
 </ul>
-</section>
 
-<section>
-<h2>About Us</h2>
-<p>7+ Years of Teaching Experience</p>
-</section>
+</div>
 
-<section>
-<h2>Contact</h2>
-<p>Deepak Verma</p>
-<p>7678664625</p>
-<p>9355719795</p>
-</section>
-
-<footer>
-A1 Classes © 2026
-</footer>
+</div>
 
 </body>
 </html>
