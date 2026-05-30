@@ -210,20 +210,43 @@ Guiding students towards academic excellence, conceptual clarity and exam succes
 
   <div class="card">
 
-<h2>Apply for Admission</h2>
+<h2>Admission Enquiry Form</h2>
 
-<p>
-Join A1 Classes and start your journey towards academic excellence.
-Fill out the admission form and we will contact you soon.
-</p>
+<input type="text" id="name" placeholder="Student Name"
+style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none;">
 
-<a class="hero-btn"
-href="https://forms.gle/23sJJbLTrkatw74g6"
-target="_blank">
-Apply Now
+<input type="tel" id="mobile" placeholder="Mobile Number"
+style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none;">
+
+<select id="class"
+style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none;">
+
+<option>Class 9</option>
+<option>Class 10</option>
+<option>Class 11</option>
+<option>Class 12</option>
+
+</select>
+
+<select id="subject"
+style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none;">
+
+<option>Mathematics</option>
+<option>Economics</option>
+<option>Business Studies</option>
+<option>Accountancy</option>
+
+</select>
+
+<a href="#"
+class="hero-btn"
+onclick="sendWhatsApp()">
+
+Submit Enquiry
+
 </a>
 
-</div>
+  </div>
 
 <div class="card">
 
@@ -285,6 +308,31 @@ Download App
 © 2026 A1 Classes | Empowering Education, Shaping Futures.
 
 </footer>
+
+  <script>
+
+function sendWhatsApp(){
+
+var name=document.getElementById("name").value;
+var mobile=document.getElementById("mobile").value;
+var studentClass=document.getElementById("class").value;
+var subject=document.getElementById("subject").value;
+
+var message=
+"New Admission Enquiry%0A%0A"+
+"Name: "+name+"%0A"+
+"Mobile: "+mobile+"%0A"+
+"Class: "+studentClass+"%0A"+
+"Subject: "+subject;
+
+window.open(
+"https://wa.me/917678664625?text="+message,
+"_blank"
+);
+
+}
+
+  </script>
 
 </body>
 </html>
